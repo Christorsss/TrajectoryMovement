@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using Test.SliderUtilities;
 using Test.Trajectory;
 using Test.Utilities;
@@ -24,6 +22,7 @@ namespace Test.Circle
 
             _circleObject.Initialize();
             _movePoints = new MovePointsList();
+            _speedSlider.SliderComponent.value = _circleObject.Speed;
 
             SubscribeEvents();
         }

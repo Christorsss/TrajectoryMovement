@@ -5,12 +5,14 @@ namespace Test.Circle
 {
     public class CircleView : MonoBehaviour
     {
-        private const float _DESTINATION_TRASHOLD = 0.01f;
+        private const float _DESTINATION_TRASHOLD = 0.05f;
         private const float _DEFAULT_START_SPEED = 5;
 
         public Action OnReachedDestination;
 
         private CircleMovementModel _movementModel;
+
+        public float Speed => _movementModel.CurrentSpeed;
 
         public void Initialize()
         {
